@@ -2,6 +2,11 @@ mat-card {
     overflow: hidden;
 }
 
+mat-card-subtitle{
+    font-size: larger;
+    color: white;
+}
+
 .filme-card {
     max-width: 400px;
     background-color: grayscale($color: #222222);
