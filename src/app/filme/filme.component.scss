@@ -1,0 +1,22 @@
+.filme-card {
+    max-width: 400px;
+    background-color: grayscale($color: #222222);
+    color: white;
+}
+
+.mat-card-title{
+    font-weight: bold;
+    height: 36px;
+}
+
+.mat-icon {
+    transform: scale(0.8);
+    display: inline-flex;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    color: #ffbb00;
+}
+
+.mat-card-content{
+    cursor: pointer; 
+}

@@ -1,0 +1,12 @@
+<mat-card class="filme-card">
+    <mat-card-content>
+        <img mat-card-image src={{filme.poster_path}} alt={{filme.title}} routerLink={{filme.id}}>
+    </mat-card-content>
+    <mat-card-header>
+        <mat-card-subtitle>
+            <mat-icon>grade</mat-icon>
+            {{filme.vote_average}}
+        </mat-card-subtitle>
+        <mat-card-title>{{filme.title}}</mat-card-title>
+    </mat-card-header>
+</mat-card>

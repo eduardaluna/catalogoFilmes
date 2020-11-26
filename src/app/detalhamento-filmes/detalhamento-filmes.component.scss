@@ -1,0 +1,24 @@
+mat-grid-tile {
+    background: grayscale($color: #202020);
+    border-radius: 6px;
+}
+
+mat-card-header {
+    height: 600px;
+}
+
+.filme-card {
+    max-width: 600px;
+    background-color: grayscale($color: #222222);
+    color: white;
+}
+
+.descricao{
+    padding: 15px;
+    text-align: justify;
+    margin: 0;
+    position: absolute;
+    top: 75%;
+    -ms-transform: translateY(-75%);
+    transform: translateY(-75%);
+}

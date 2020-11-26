@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Detalhamento do Filme</title>
+    </head>
+    <br>
+    <body>
+        <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="20px grid" fxLayoutAlign="center">
+            <ng-container>
+                <app-filme fxFlex="0 1 calc(33% - 20px)" fxFlex.lt-md="0 1 calc(33% - 20px)" 
+                fxFlex.lt-sm="100%" [filme]="filme"></app-filme>
+            </ng-container>
+            <div>
+                <ng-container fxFlex="0 1 calc(33% - 20px)" fxFlex.lt-md="0 1 calc(33% - 20px)" 
+                fxFlex.lt-sm="100%">
+                    <mat-card class="filme-card">
+                        <mat-card-content>
+                            <img mat-card-image src={{filme.backdrop_path}} alt={{filme.title}}>
+                        </mat-card-content>
+                        <div>
+                            <mat-card-content class="descricao">
+                                <p>Título Original: {{filme.original_title}}</p>
+                                <p>Data de Lançamento: {{filme.release_date}}</p>
+                                <p>Descrição: {{filme.overview}}</p>
+                            </mat-card-content>
+                        </div>
+                    </mat-card>
+                </ng-container>
+            </div>
+        </div>
+    </body>
+</html>
